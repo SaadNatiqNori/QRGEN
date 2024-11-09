@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// Components (Sections)
+import Header from "./components/shared/Header";
+import Footer from "./components/shared/Footer";
+import HeroSection from "./components/sections/HeroSection";
+import ServicesBigCardsSection from "./components/sections/ServicesBigCardsSection";
+import ServicesCardsSection from "./components/sections/ServicesCardsSection";
+// Smooth Scrooling
+import SmoothScroll from "./components/other/SmoothScrollProvider";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SmoothScroll>
+      <div className="relative w-full">
+        {/* Header */}
+        <Header />
+        {/* Content */}
+        <HeroSection />
+        <ServicesCardsSection />
+        <ServicesBigCardsSection />
+        {/* Footer */}
+        <Footer />
+      </div>
+    </SmoothScroll>
   );
 }
 
