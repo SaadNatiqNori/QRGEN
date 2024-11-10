@@ -11,7 +11,7 @@ import MobileMenu from '../other/MobileMenu';
 
 
 const NavLink = ({ to, text }) => (
-    <Link to={to} className='text-black pb-1 border-b-2 border-transparent hover:text-primary hover:border-primary w-full md:w-fit'>
+    <Link to={to} className='text-black pb-1 border-b-2 border-transparent hover:text-primary hover:border-primary w-full lg:w-fit'>
         {text}
     </Link>
 );
@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <>
             {/* Non-Mobile Header */}
-            <header className='bg-white w-full h-[80px] hidden md:flex justify-between items-center gap-5 fixed top-0 left-0 z-50 px-32 pt-2'>
+            <header className='bg-white w-full h-[80px] hidden lg:flex justify-between items-center gap-5 fixed top-0 left-0 z-50 px-32 pt-2'>
                 <Logo src={logo} alt="logo" />
                 <div className='flex flex-1 justify-end items-center gap-7'>
                     <CustomeDropdown text={'Features'} />
@@ -36,7 +36,7 @@ const Header = () => {
             </header>
 
             {/* Mobile Header */}
-            <header className='bg-white w-full h-[80px] grid grid-cols-8 md:hidden gap-5 fixed top-0 left-0 z-50 px-4 pt-2'>
+            <header className='bg-white w-full h-[80px] grid grid-cols-8 lg:hidden gap-5 fixed top-0 left-0 z-50 px-4 pt-2'>
                 <MenuButton menuIcon={menu} onClick={() => setOpenMenu(true)} />
                 <Logo src={logo} alt="logo" />
                 <MobileMenu open={openMenu} onClose={() => setOpenMenu(false)} />

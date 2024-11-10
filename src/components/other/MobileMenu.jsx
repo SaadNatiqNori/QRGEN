@@ -4,7 +4,7 @@ import AuthButtons from "./AuthButtons";
 import { Link } from "react-router-dom";
 
 const NavLink = ({ to, text }) => (
-    <Link to={to} className='text-black pb-1 border-b-2 border-transparent hover:text-primary hover:border-primary w-full md:w-fit'>
+    <Link to={to} className='text-black pb-1 border-b-2 border-transparent hover:text-primary hover:border-primary w-full lg:w-fit'>
         {text}
     </Link>
 );

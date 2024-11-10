@@ -7,20 +7,20 @@ export default function Footer() {
     const { logoBlack, facebook, instagram, youtube, linkedin } = useAppIcons();
 
     return (
-        <footer className='relative px-4 md:px-56 bg-black py-8 md:py-24'>
+        <footer className='relative px-4 lg:px-56 bg-black py-8 lg:py-24'>
             {/* Links & Desc */}
-            <div className='w-full flex flex-col md:flex-row justify-between items-start'>
-                <div className='w-full md:w-5/12'>
-                    <img src={logoBlack} alt="logo" className='w-[190px] md:w-[160px] mb-1' />
-                    <p className='text-white w-full md:w-3/4'>
+            <div className='w-full flex flex-col lg:flex-row justify-between items-start'>
+                <div className='w-full lg:w-5/12'>
+                    <img src={logoBlack} alt="logo" className='w-[190px] lg:w-[160px] mb-1' />
+                    <p className='text-white w-full lg:w-3/4'>
                         Create QR Codes Effortlessly with Our Free Generator -- Comprehensive, Customizable, and Insightful
                     </p>
                     {/* Dashed Box */}
-                    <h3 className='block md:hidden py-6 px-7 w-full bordered-box text-primary font-extrabold my-4 text-center text-xl bg-transparent'>
+                    <h3 className='block lg:hidden py-6 px-7 w-full bordered-box text-primary font-extrabold my-4 text-center text-xl bg-transparent'>
                         Try Our QR Code Generator 7 days for free
                     </h3>
                     {/* Social */}
-                    <div className='hidden md:flex flex-col justify-start items-start gap-2 mt-8'>
+                    <div className='hidden lg:flex flex-col justify-start items-start gap-2 mt-8'>
                         <p className='text-white text-xl font-extrabold'>
                             Let's get social!
                         </p>
@@ -40,8 +40,8 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full grid grid-cols-2 gap-5 md:flex md:flex-row md:flex-1 justify-between items-start md:gap-0 mt-12 md:mt-0'>
-                    <div className='flex justify-start md:justify-end items-start'>
+                <div className='w-full grid grid-cols-2 gap-5 lg:flex lg:flex-row lg:flex-1 justify-between items-start lg:gap-0 mt-12 lg:mt-0'>
+                    <div className='flex justify-start lg:justify-end items-start'>
                         <div className='relative flex flex-col justify-start items-start gap-2'>
                             <p className='font-extrabold mb-2 text-white'><strong>Product</strong></p>
                             <Link to={'/'} className='font-light text-white/85'>Benifits</Link>
@@ -50,7 +50,7 @@ export default function Footer() {
                             <Link to={'/'} className='font-light text-white/85'>Affiliate Program</Link>
                         </div>
                     </div>
-                    <div className='flex justify-start md:justify-end items-start'>
+                    <div className='flex justify-start lg:justify-end items-start'>
                         <div className='relative flex flex-col justify-start items-start gap-2'>
                             <p className='font-extrabold mb-2 text-white'><strong>Information</strong></p>
                             <Link to={'/'} className='font-light text-white/85'>Payment & Content</Link>
@@ -60,7 +60,7 @@ export default function Footer() {
                             <Link to={'/'} className='font-light text-white/85'>Reviews</Link>
                         </div>
                     </div>
-                    <div className='flex justify-start md:justify-end items-start'>
+                    <div className='flex justify-start lg:justify-end items-start'>
                         <div className='relative flex flex-col justify-start items-start gap-2'>
                             <p className='font-extrabold mb-2 text-white'><strong>Legal</strong></p>
                             <Link to={'/'} className='font-light text-white/85'>About Us</Link>
@@ -69,7 +69,7 @@ export default function Footer() {
                             <Link to={'/'} className='font-light text-white/85'>Terms & Conditions</Link>
                         </div>
                     </div>
-                    <div className='flex justify-start md:justify-end items-start'>
+                    <div className='flex justify-start lg:justify-end items-start'>
                         <div className='relative flex flex-col justify-start items-start gap-2'>
                             <p className='font-extrabold mb-2 text-white'><strong>Support</strong></p>
                             <Link to={'/'} className='font-light text-white/85'>FAQ</Link>
@@ -80,7 +80,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex md:hidden flex-col justify-start items-start gap-2 mt-8'>
+                <div className='flex lg:hidden flex-col justify-start items-start gap-2 mt-8'>
                     <p className='text-white text-xl font-extrabold'>
                         Let's get social!
                     </p>
@@ -101,14 +101,14 @@ export default function Footer() {
                 </div>
             </div>
             {/* Dashed Line */}
-            <div className='w-full h-[20px] bordered mt-8 md:mt-10 mb-5'></div>
+            <div className='w-full h-[20px] bordered mt-8 lg:mt-10 mb-5'></div>
             {/* Copyright */}
-            <div className='w-full flex flex-col md:flex-row justify-between items-center gap-5'>
-                <div className='flex flex-col-reverse md:flex-col justify-start items-center md:items-start gap-2'>
+            <div className='w-full flex flex-col lg:flex-row justify-between items-center gap-5'>
+                <div className='flex flex-col-reverse lg:flex-col justify-start items-center lg:items-start gap-2'>
                     <p className='text-sm text-white font-bold'>Made in Dubai ❤️ UAE 🇦🇪</p>
-                    <p className='text-sm text-white font-bold text-center md:text-start'>2024 &copy; Brainy Box Technologies FZCO - "QR CODE" is a trademark of DENSO WAVE INCORPORATED</p>
+                    <p className='text-sm text-white font-bold text-center lg:text-start'>2024 &copy; Brainy Box Technologies FZCO - "QR CODE" is a trademark of DENSO WAVE INCORPORATED</p>
                 </div>
-                <div className='flex justify-between items-center gap-5 w-full md:w-fit'>
+                <div className='flex justify-between items-center gap-5 w-full lg:w-fit'>
                     {/* Here i am not sure if we have localizations nor not that's why i am not adding functionality to the button, but we can use i18n for localization */}
                     <button className='flex justify-center items-center gap-2'>
                         <img loading="lazy" src="https://media.istockphoto.com/id/185228721/photo/old-british-flag-union-jack.jpg?s=612x612&w=0&k=20&c=wAhRV_YTdJlZRq4JGHebovy3CY-6-jRH3k4Vumisllk=" className='w-[30px] h-[30px] rounded-full' alt="language" />
